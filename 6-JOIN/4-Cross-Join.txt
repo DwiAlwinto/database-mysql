@@ -1,0 +1,9 @@
+CROSS JOIN :
+syntax YA :
+SELECT murid.* , jurusan.nama_jurusan
+FROM murid
+CROSS JOIN jurusan
+
+NOTED :
+hasilnya akan memasang semua nama murid dengan semua jurusan 1 per 1.
+ini sering dipakai.

@@ -1,0 +1,12 @@
+WHERE IN
+    Soalnya : 
+     1. Cari data murid jurusana PROGRAMMER DAN EKONOMI
+CASE :
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE jurusan.id IN (2,6) 
+
+noted :
+IN (2,6) = untuk no id jurusan ya.

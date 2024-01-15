@@ -1,0 +1,12 @@
+Tipe data MySql : Menentukan value yang bisa disimpan.
+                 Jadi value/nilai data tidak bisa disimpan asal-asalan.
+
+                 Contoh : 
+                 kita tidak bisa menyimpan kalimat/string/text di dalam kolom table yang tipe datanya integer/angka.
+
+    Jenis-jenis data :
+    1. String.
+    2. Number.
+    3. Date & Time.
+
+

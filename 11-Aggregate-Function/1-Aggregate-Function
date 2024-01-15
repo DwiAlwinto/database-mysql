@@ -1,0 +1,28 @@
+Aggregate Fuction :
+
+1. COUNT :
+    a. Jumlah data di table murid :
+    SELECT COUNT(nama) FROM murid
+    
+    b. Jumlah data kelas 12 ditable murid :
+    SELECT COUNT(nama) FROM murid
+    WHERE kelas=12;
+
+2. SUM
+     a. Untuk jumlah nilai semua murid :
+        SELECT SUM(Nilai) FROM murid
+
+    b. Untuk jumlah nilai kelas 11 saja :
+        SELECT SUM(Nilai) FROM murid
+        WHERE kelas=11
+
+3. AVG : Untuk Menghitung rata-rata dari nilai murid (avargae) 
+    SELECT AVG(Nilai) FROM murid
+    WHERE kelas=11(ini kalau mau cari nilai rata2 kelas 11 saja).
+
+4. MAX : Untuk nilai maximal 
+    SELECT MAX(Nilai) FROM murid;
+
+5. MIN : Mendapatkan nilai terendah di antara kumpulan data
+    SELECT MIN(Nilai) FROM murid
+    WHERE kelas=11;

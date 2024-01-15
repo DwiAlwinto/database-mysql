@@ -1,0 +1,14 @@
+cara update table menggunakan :
+alter table
+add column
+update column
+drop column
+
+contoh menambahkan column ditable guru :
+    ALTER TABLE guru ADD COLUMN jenis_kelamin varchar (10) NOT null
+contoh update column jenis_kelamin :
+    ALTER TABLE guru MODIFY COLUMN jenis_kelamin varchar (15) NOT null
+contoh hapus column jenis_kelamin :
+    ALTER TABLE guru DROP jenis_kelamin
+contoh hapus table :
+    DROP TABLE nama_table.

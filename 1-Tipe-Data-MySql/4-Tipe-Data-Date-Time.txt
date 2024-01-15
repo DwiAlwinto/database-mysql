@@ -1,0 +1,16 @@
+    Tipe Data Date & Time :
+    1. Date :
+        Formatnya : YYYY-MM-DD (tahun, bulan, tanggal)
+
+    2. Time :
+        Formatnya : hh:mm:ss (hh: hours, mm: menit, ss: second)
+
+    3. Datetime : 
+        Formatnya : YYYY-MM-DD hh:mm:ss
+
+    4. Timestamp :
+        Formatnya : YYYY-MM-DD hh:mm:ss 
+        (current time = automatis sudah diisi di waktu yang sekarang).
+
+    5. Year       :
+        formatnya : YYYY

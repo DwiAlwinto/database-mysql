@@ -1,0 +1,14 @@
+Menampilkan data-data yang ada di table : 
+
+Untuk Menampilkan semua data yang ada jurusan :
+SELECT * FROM jurusan
+
+
+Untuk Menampilkan nama_jurusan : 
+SELECT nama_jurusan FROM jurusan
+
+Untuk Menampilkan id jurusan :
+SELECT id FROM jurusan
+
+untuk id tertentu :
+SELECT * FROM jurusan WHERE id=2

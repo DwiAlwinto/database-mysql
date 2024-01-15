@@ -1,0 +1,11 @@
+masuk sql :
+        masuk database kita 
+        crete table : untuk membuat table baru
+
+    CREATE TABLE guru (
+	id int AUTO_INCREMENT,
+    nama varchar (100) NOT null,
+    No_induk_guru int(12) NOT null,
+    PRIMARY KEY (id),
+    UNIQUE (no_induk_guru)
+  )

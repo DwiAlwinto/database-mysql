@@ -1,0 +1,16 @@
+OFFSET :
+INI KITA MEMUNCULKAN DATA SETELAH DATA KE BERAPA.
+OFFSET Jumlah data yang kita tidak ikutkan. 
+
+
+ OFFSET simpel ya data terakhir yang tidak kita ikut sertakan.
+        Cara penggunaan limit dengan:
+        case ya :
+        Tampilkan data murid tapi no 1 dan 2 tidak ikut sertakan TAPI limit 5:
+            SELECT * murid FROM 'murid' limit 5
+            OFFSET 2
+
+        case kelas 11 saja :
+        SELECT * FROM `murid` WHERE kelas=11 
+        LIMIT 3
+        OFFSET 2;

@@ -1,0 +1,68 @@
+        FOREIGN KEY kita merefernsi data ke table lainya.
+            contoh table sekolah : jurusan dan murid akan di refernsi
+            FOREIGN akan menyimpan id yang akan merefernsikan dia.
+            penting juga type data nya harus sama.
+    cara membuat FOREIGN KEY menggunakan syntax : 
+        1. Merefensi table murid ke table jurusan.
+
+        2. Hapus jurusan yang di table murid, yg tadinya ada sekarang tidak ada.
+
+        3. Membuat syabtx di table murid :
+                ALTER TABLE murid
+                ADD COLUMN jurusan_id int,
+                ADD CONSTRAINT fk_jurusanmurid
+                FOREIGN KEY (jurusan_id) REFERENCES jurusan (id)
+
+        4. Cara Hapus FOREIGN KEY table murid dan jurusan sebelum setting -> ON DELETE RESTRICT  :
+                ALTER TABLE murid
+                DROP CONSTRAINT fk_jurusanmurid
+
+        5. Jadi table murdi -> column jurusan_id sudah relasi dengan table jurusan -> column id
+
+        5. Cara melihat yang sudah di FOREIGN KEY
+                SELECT a.*, b.nama_jurusan AS nama_jurusan FROM murid a
+                JOIN jurusan b
+                ON a.jurusan_id=b.id
+
+        6. ON DELETE RESTRICT :
+           Jika kita akan hapus parent kita lihat dulu child, ada engga child tersebut kalau ada kita tida bisa menghapus.
+           cara ya gini :
+           ALTER TABLE murid
+           ADD CONSTRAINT fk_jurusanmurid
+           FOREIGN KEY (jurusan_id) REFERENCES jurusan (id)
+           ON DELETE RESTRICT
+           
+           ON DELETE CASECADE :
+           Jika kita hapus parent maka child ya akan ke hapus.
+           didata murid dan jurusan column ya akan ke hapus
+           caranya kalau kita akan mengganti :
+           1. Hapus dulu ON DELETE RESTRICT
+                ALTER TABLE murid
+                DROP CONSTRAINT fk_jurusanmurid
+                
+           2. Masuk ke syntax murid :
+                ALTER TABLE murid
+                ADD CONSTRAINT fk_jurusanmurid
+                FOREIGN KEY (jurusan_id) REFERENCES jurusan (id)
+                ON DELETE CASECADE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Menambahkan column di table murid :
+INSERT INTO `murid` (`id`, `nama`, `no_induk`, `kelas`, `jurusan`) VALUES (NULL, 'Agus', '1001', '11', 'Bahasa');
+

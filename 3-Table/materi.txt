@@ -1,0 +1,25 @@
+DATABASE : Merupakan yang paling awal.
+
+TABLE    : Didalam DATABASE ada TABLE-TABLE data-data tersebut yang akan disimpan table-table ini.(menyimpan data khusus diri ya sendiri).
+
+COLUMN   : Spesifikasi data yang akan disimpan ke dalam table.
+
+
+contoh : 
+sekolah : ini database ya
+murid, guru, jurusan : ini table-table ya
+
+Ini table-table dan column ya :
+    MURID : nama, no induk, kelas, jurusan.
+    GURU  : nama, no induk.
+    JURUSAN : nama
+
+
+salah satu penting dalam membuat table :
+Primary Key : idintifier sebuah data, untuk pembeda, membedakan data satu dengan lainya, contoh nya no Induk KTP.
+
+AUTO_INCREMENT akan bertambah otomatis no ya.
+varchar langth harus diisi manual.
+UNIQUE no yang satu dengan lainya tidak sama
+
+

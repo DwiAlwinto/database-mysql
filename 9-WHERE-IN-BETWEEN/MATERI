@@ -1,0 +1,10 @@
+1. WHERE IN
+2. WHERE BETWEEN
+
+IN : SHORTHAND dari WHERE OR
+BETWEEN : Mencari data sesuai range yang diinginkan
+
+case :
+1. Cari data murid jurusana PROGRAMMER DAN EKONOMI
+2. Cari data murid yang daftar sekolah dari tanggal 8 januari 2014 - 30 Januari 2015
+    Formaynya : ( 2014-01-08 s/d 2015-01-30 )

@@ -1,0 +1,13 @@
+                CRUD (CREATE UPDATE DELETE)
+
+Untuk insert di table jurusan -> column nama_jurusan :
+INSERT INTO jurusan (nama_jurusan) VALUES ('Programmer')
+
+UNTUK update DI TABLE jurusan -> column nama_jurusan : (where untuk lokasi id yang akan diubah).
+UPDATE jurusan SET nama_jurusan='Hubungan Internasional' WHERE id=1
+
+Untuk ubah nama_jurusan semua ya : (kalau tanpa where akan ubah semua ya nama_jurusan ya)
+UPDATE jurusan SET nama_jurusan='Kebudayan' 
+
+Untuk hapus isi column nama_jurusan : gunakan WHERE untuk posisi id yang akan di hapus
+DELETE FROM jurusan WHERE id=3

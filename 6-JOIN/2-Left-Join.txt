@@ -1,0 +1,9 @@
+LEFT JOIN :
+ini syntax inner join :
+SELECT murid.* , jurusan.nama_jurusan
+FROM murid
+LEFT JOIN jurusan
+ON murid.jurusan_id=jurusan.id
+
+left join :
+Table murid akan muncul kan semuanya, dan jurusan yang muncul hanya yang refernsi dengan table murid.

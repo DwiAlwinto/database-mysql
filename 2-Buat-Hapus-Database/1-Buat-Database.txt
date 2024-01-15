@@ -1,0 +1,17 @@
+Cara masuk ke localhost :
+http://localhost/phpmyadmin/
+http://127.0.0.1/dashboard/
+
+    Buat Database :
+    new -> create Database
+    buat database menggunakan syntax :
+        create database nama_database
+
+    lihat semua databases :
+        show databases
+
+    Hapus database masuk ke databse ya:
+        opertions -> drop database
+        
+    hapus database menggunakan sql masuk ke localhost database ya :
+        DROP database_satu(ini database ya)

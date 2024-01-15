@@ -1,0 +1,19 @@
+   1. Tipe Data String :
+        a. Char :
+            bisa menyimpan huruf, angka, simbol, dll (fixed length).
+            char nama(100) => "Budi       " 
+            (kalau char langth ya 100 dan dia akan menyimpan sepasi kosong sisa 100 ya dari nama BUDI)
+        
+        b. Varchar :
+            sama seperti char(tidak fixed).
+            varchar nama(100) => "BUDI"
+            (langth ya 100 dan dia tidak menyimpan spasi kosong hanya menyimpan BUDI saja tidak seperti char). 
+            sebaiknya menggunakan tipe data varchar.
+
+        c. Text(tinytext, mediumtext, longtext) :
+            Sama seperti char dan varchar(cocok untuk menyimpan keterangan berupa paragraf).
+            
+        d. Enum :
+            hanya bisa menampung nilai diantara yang sudah kita siapkan. 
+                contoh : enum(pria, wanita).
+        

@@ -1,0 +1,10 @@
+Right Join :
+ini syntax inner join :
+    SELECT murid.* , jurusan.nama_jurusan
+    FROM murid
+    RIGHT JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+ Hasilnya table colum jurusan dan kalau murid hanya yang refernsi dengan jurusan.
+ ini lawan dari left join.
+
+ 

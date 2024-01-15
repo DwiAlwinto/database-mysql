@@ -1,0 +1,31 @@
+    Tipe Data Numeric :
+
+    1. Int :
+        signed (-2147483648 s/d 2147483647)
+        unsigned( 0 s/d 4294967295)
+        a. Tinyint : 
+            signed (-128 s/d 127)
+            unsigned (0 s/d 255)
+        b.  Smallint :
+            signed(-32768 s/d 32767)
+            unsigned(0 s/d 65536)
+        c. Mediummint
+            signed (-8388608 s/d 8388607)
+            unsigned (0 s/d 16777215)
+        d. Bigint 
+            signed (-9223376854776000 s/d 92233720366854776000)
+            unsigned (0 s/d 184467440737095511615)
+
+    2. Float 
+        ini bisa (1,5 3,4 dll ini buat yang komah-komah)
+
+    3. Double
+        ini bisa (1,5 3,4 ini buat yang komah-komah)
+
+    4. Decimal
+        ini bisa (1,5 3,4 ini buat yang komah-komah)
+        
+    5. Bool
+        untuk menyimpan true and false.
+        false : 0
+        true : 1

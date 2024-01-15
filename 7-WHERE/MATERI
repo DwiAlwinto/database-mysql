@@ -1,0 +1,9 @@
+KONDISI :
+1. and (semua kodisi ya harus terpenuhi : harus true semua)
+2. or (kalau salah satu terpenuhi, udah benar/true)
+3. not (bukan ini buka itu)
+
+case :
+1. Tampilkan murid kelas 11 jurusan Otomotif
+2. tampilkan murid kelas 11 yang jurusan programmer dan Tata Busana
+3. Tampilkan murid yang bukan jurusan programmer dan buan jurusan Tata Busana

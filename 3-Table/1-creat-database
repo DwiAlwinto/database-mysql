@@ -1,0 +1,5 @@
+CREATE DATABASE nama_database ya  : membuat database baru
+SHOW DATABASES   : untuk melihat semua database 
+ALTER TABLE : ini untuk ubah TABLE
+ADD COLUMN : Menambah kolom baru
+MODIFY COLUMN : ini untuk modif TABLE COLUMN

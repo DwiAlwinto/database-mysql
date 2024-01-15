@@ -1,0 +1,29 @@
+INNER JOIN : kerteria yang dimunculkan yang ada hububgan anatara table yang berelasi.
+
+ini syntax inner join :
+SELECT murid.* , jurusan.nama_jurusan
+FROM murid
+INNER JOIN jurusan
+ON murid.jurusan_id=jurusan.id
+
+cara bacanya : 
+SELECT murid.*  = pilih table murid.*(semuanya yg didalam table nya).
+
+jurusan.nama_jurusan   = table jurusan. tapi cuma column nama_jurusan yang dipilih.
+
+FROM murid = kita select ini dari table murid.
+
+INNER JOIN jurusan = joinkan ke table jurusan
+
+ON murid.jurusan_id=jurusan.id = ON itu untuk menggabungkan anatara table murid column jurusan_id digabungakan denga jurusan column id (inti ya menjembatani table murid dengan jurusan);
+
+ON (itu apa kunci yang menjembatani dari table murid dengan table jurusan)
+
+
+noted kita bisa ganti nama alias :
+menggunakan AS 
+SELECT murid.* , jurusan.nama_jurusan AS jurusan_nama
+FROM murid
+INNER JOIN jurusan
+ON murid.jurusan_id=jurusan.id
+ 

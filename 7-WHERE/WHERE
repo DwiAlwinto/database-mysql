@@ -1,0 +1,29 @@
+kita join dulu :
+select murid.* jurusan.nama_jurusan
+from mudri
+JOIN jurusan
+ON murid.jurusan_id=jurusan.id
+
+
+KONDISI :
+ 1. AND (kedua ya harus terpenuhi ya harus benar semuanya)
+    1. Tampilkan murid kelas 11 tapi jurusan Otomotif
+    select murid.*, jurusan.nama_jurusan
+    from murid join jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE murid.kelas=11 AND murid.jurusan_id=2
+
+2. OR (Salah satu harus benar atau terpenuhi)
+    2. tampilkan murid kelas 11 yang jurusan programmer dan Tata Busana
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE murid.kelas=11 AND (jurusan_id=6 OR jurusan_id=7)
+
+3. NOT (pahamai case ya)
+    3. Tampilkan murid yang bukan jurusan programmer dan buan jurusan Tata Busana
+    SQL nya :
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE NOT jurusan.id=6 AND  NOT jurusan.id=7 

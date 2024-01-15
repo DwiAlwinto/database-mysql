@@ -1,0 +1,36 @@
+ORDER BY : Mengurutkan data yang kita tampilkan.
+    Cara Mengurutkan dengan nama abjad : (lebih baik sebutkan nama table dan lalu nama column)
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    ORDER BY murid.nama
+
+    ORDER BY ada 2 jenis :
+    ASC : (ini dari A - Z) tapi secara default sudah kaya gini
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    ORDER BY murid.nama ASC
+
+    DESC = ini dari Z - A (Balikanya)
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    ORDER BY murid.nama DESC
+
+    //ini order sesuai kelas
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    ORDER BY murid.kelas;
+
+    //Mengurutkan data multipel column (urutukan kelas dulu, lalu nama_jurusan);
+        SELECT murid.*, jurusan.nama_jurusan
+        FROM murid
+        JOIN jurusan
+        ON murid.jurusan_id=jurusan.id
+        ORDER BY murid.kelas, jurusan.nama_jurusan

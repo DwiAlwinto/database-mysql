@@ -1,0 +1,16 @@
+LIMIT : 
+untuk membatasi.
+Kita bisa membatasi data-data dari database ke website kita.
+Fungsi ya meringankan website kita, kita bisa membatasi data-data kita.
+
+Contoh syntax :
+    Untuk membatasi Jumlah murid yang muncul :
+        SELECT * FROM `murid` LIMIT 3
+    
+    Kita coba kolaborasi LIMIT dengan WHERE :
+        a. Kita munculkan Jumlah murid kelas 11 dengan limit 2 :
+            SELECT * FROM `murid` WHERE kelas=11 LIMIT 2
+
+
+Noted Contoh pemakaian :
+Yaitu page di setiap website

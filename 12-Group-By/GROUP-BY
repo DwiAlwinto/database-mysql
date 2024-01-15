@@ -1,0 +1,34 @@
+
+GROUP BY : 1.  Memunjulkan data-data yang kita mau.
+           2. Dapat kolaborasi Aggregate dengan yang lain 
+    CONTOH WEBSITE OLX Jumlah setiap kategori.
+
+    CARA PENGGUNAAN YA COUNT :
+     1. Cara tahu Jumlah murid dari setiap kelas.
+        SELECT COUNT(id), kelas FROM murid GROUP BY kelas;
+
+        Cara Memunjulkan jumlah murid.id dan nama_jurusan nya
+            SELECT COUNT(murid.id), jurusan.nama_jurusan
+            FROM murid
+            JOIN jurusan
+            ON murid.jurusan_id=jurusan.id
+            GROUP BY jurusan.nama_jurusan;
+
+    2. Cara menampikan jumlah Nilai Siswa dan Nama ya :
+        SELECT SUM(Nilai), nama FROM murid
+        GROUP BY nama;
+
+    3. Cara menggunakan avargae (avg) :
+        a. Cara tampilkan murid kelas 11 dan 12 
+            SELECT AVG(Nilai) FROM murid
+            GROUP by kelas;
+
+    4.  Cara menampikan nilai max(tertinggi setiap kelas)
+            SELECT MAX(Nilai), kelas FROM murid
+            GROUP BY kelas;
+            
+    5. Cara menampikan nilai MIN(terendah setiap kelas)
+            SELECT MIN(Nilai), kelas FROM murid
+            GROUP BY kelas;
+    
+    

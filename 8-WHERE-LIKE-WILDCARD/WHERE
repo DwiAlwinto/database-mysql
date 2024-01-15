@@ -1,0 +1,38 @@
+SELECT murid.*, jurusan.nama_jurusan
+FROM murid
+JOIN jurusan
+ON murid.jurusan_id=jurusan.id
+WHERE murid.nama='Alwin Xiaoyan'
+
+WILDCARD :
+Karakter wildcard digunakan untuk menggantikan satu atau lebih karakter dalam sebuah string
+
+Cara mengetahui :
+WHERE LIKE AND WILDCARD :
+
+1. Mencari murid yang ada nama Susanto ya menggunakan LIKE dan WILDCARD(%%) :
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE murid.nama LIKE '%SUSA%' 
+
+2. Menemukan muri dengan awalan a 
+   SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE murid.nama LIKE 'a%'; 
+3. Menemukan muri dengan akhiran o
+   SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE murid.nama LIKE '%o'; 
+4. Menggunakan _ (andescore) :
+    SELECT murid.*, jurusan.nama_jurusan
+    FROM murid
+    JOIN jurusan
+    ON murid.jurusan_id=jurusan.id
+    WHERE murid.nama LIKE 'di_%';
+
